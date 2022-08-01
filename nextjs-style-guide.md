@@ -246,6 +246,12 @@ return <Button onClick={displayConsole}>Push</Button>;
   );
 ```
 
+### 使い回す可能性のある処理は関数化して切り分ける
+
+- 基本的にビューとロジックを切り離す
+- 必要であればファイルを分ける
+- 例）データのフェッチ、時刻の整形処理
+
 ## 参考にした記事
 
 - https://qiita.com/WalkerWalks/items/9c9a1098404cd89c0068
