@@ -46,8 +46,7 @@
 
 <!-- Not Recomended -->
 <ul>
-  <li>itemA</li>
-  <li>itemB</li>
+    <li>itemA</li><li>itemB</li>
 </ul>
 ```
 
@@ -60,8 +59,7 @@
 
 /* Not recommended */
 .selector {
-  font-size: 1.2em;
-  color: #a1a1a1;
+  font-size: 1.2em; color: #a1a1a1;
 }
 ```
 
