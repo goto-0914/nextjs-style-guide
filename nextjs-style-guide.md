@@ -206,7 +206,8 @@ const apiUrl = origin + '/api/v2/user/' + userId;
 
 ### if の使用を避ける
 
-記述が長くなる場合には if を使用する
+- 基本的には短絡評価を使用する
+- 記述が長くなる、分岐が複雑化する場合には if や switch を使用する
 
 ```JavaScript
 // Recommended
