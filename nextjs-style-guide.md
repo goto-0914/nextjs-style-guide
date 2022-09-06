@@ -45,8 +45,9 @@
 </ul>
 
 <!-- Not Recomended -->
+<!-- prettier-ignore -->
 <ul>
-    <li>itemA</li><li>itemB</li>
+  <li>itemA</li><li>itemB</li>
 </ul>
 ```
 
@@ -58,8 +59,9 @@
 }
 
 /* Not recommended */
+/* prettier-ignore */
 .selector {
-  font-size: 1.2em; color: #a1a1a1;
+  font-size: 1.2em;color: #a1a1a1;
 }
 ```
 
@@ -206,7 +208,8 @@ const apiUrl = origin + '/api/v2/user/' + userId;
 
 ### if の使用を避ける
 
-記述が長くなる場合には if を使用する
+- 基本的には短絡評価を使用する
+- 記述が長くなる、分岐が複雑化する場合には if や switch を使用する
 
 ```JavaScript
 // Recommended
