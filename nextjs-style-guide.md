@@ -255,6 +255,37 @@ return <Button onClick={displayConsole}>Push</Button>;
 - 必要であればファイルを分ける
 - 例）データのフェッチ、時刻の整形処理
 
+### マジックナンバー(数値そのものの意味以外を含んでいない具体的な数値)の使用を控える
+
+- 数値の意味が理解し難くなるため
+- 数値が関係する箇所を見極めるのが困難になる
+- 数値に対して意味のあるラベリングを行う
+
+```JavaScript
+
+// Not Recommended
+const checkAge = (age: number) => {
+  if(age < 18){
+    console.log('未成年です');
+  }
+  else{
+    console.log('成人です');
+  }
+};
+
+// Recommended
+const ADULT_AGE = 18;
+const checkAge = (age: number) => {
+  if(age < ADULT_AGE){
+    console.log('未成年です');
+  }
+  else{
+    console.log('成人です');
+  }
+};
+
+```
+
 ## 参考にした記事
 
 - https://qiita.com/WalkerWalks/items/9c9a1098404cd89c0068
